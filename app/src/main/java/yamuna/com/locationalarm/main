@@ -1,0 +1,40 @@
+
+//AlertDialog
+
+new AlertDialog.Builder(this)
+.setTitle("Title")
+.setMessage("Do you really want to whatever?")
+.setIcon(android.R.drawable.ic_dialog_alert)
+.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+
+    public void onClick(DialogInterface dialog, int whichButton) {
+        Toast.makeText(MainActivity.this, "Yaay", Toast.LENGTH_SHORT).show();
+    }})
+ .setNegativeButton(android.R.string.no, null).show();
+
+
+
+
+
+
+
+
+
+
+       <TableLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/btnAlarmAdd"
+             android:id="@+id/alarmTable">
+
+
+             <ListView
+                 android:id="@+id/listView1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="353dp"
+                 android:layout_gravity="bottom" />
+
+         </TableLayout>
+
